@@ -24,17 +24,17 @@ A RAG-based AI assistant that answers questions from your own PDF notes using se
 
 
 
-\- \*\*Python\*\* — core language
+\- Python — core language
 
-\- \*\*ChromaDB\*\* — vector database for semantic search
+\- ChromaDB — vector database for semantic search
 
-\- \*\*Sentence Transformers\*\* — local embedding model (all-MiniLM-L6-v2)
+\- Sentence Transformers — local embedding model (all-MiniLM-L6-v2)
 
-\- \*\*Groq API\*\* — LLM inference (Llama 3.3 70B)
+\- Groq API — LLM inference (Llama 3.3 70B)
 
-\- \*\*Streamlit\*\* — web interface
+\- Streamlit — web interface
 
-\- \*\*pypdf\*\* — PDF text extraction
+\- pypdf — PDF text extraction
 
 
 
@@ -42,7 +42,7 @@ A RAG-based AI assistant that answers questions from your own PDF notes using se
 
 
 
-PDF → Text Extraction → Chunking (500 chars, 50 overlap) → Embeddings → ChromaDB
+PDF → Text Extraction → Chunking → Embeddings → ChromaDB
 
 
 
@@ -54,11 +54,11 @@ Question → Embedding → Similarity Search → Top 3 Chunks → Llama 3.3 → 
 
 
 
-\- Retrieval always returns top-k results regardless of relevance score — a similarity threshold would improve precision
+\- Retrieval always returns top-k regardless of relevance score
 
-\- Fixed chunk size may split definitions across boundaries — dynamic chunking based on document structure would help
+\- Fixed chunk size may split definitions across boundaries
 
-\- No conversation memory — follow-up questions lose prior context
+\- No conversation memory for follow-up questions
 
 
 
@@ -66,7 +66,7 @@ Question → Embedding → Similarity Search → Top 3 Chunks → Llama 3.3 → 
 
 
 
-Clone the repo and install dependencies:
+Clone and install:
 
 
 
@@ -82,7 +82,7 @@ Clone the repo and install dependencies:
 
 
 
-Add a .env file with your Groq API key:
+Add a .env file:
 
 
 
@@ -90,7 +90,7 @@ Add a .env file with your Groq API key:
 
 
 
-Run the app:
+Run:
 
 
 
