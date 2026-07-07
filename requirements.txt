@@ -1,5 +1,5 @@
 streamlit
-google-generativeai
+groq
 chromadb
 pypdf
 langchain
